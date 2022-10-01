@@ -1,0 +1,15 @@
+{
+  "name": "password-please",
+  "version": "0.0.0",
+  "description": "One-quick copy passwords ranked by security, to make it the least annoying password generation page on the Internet, please.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-nodejavascript:nodejavascript/password-please.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE"
+}
