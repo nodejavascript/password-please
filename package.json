@@ -1,6 +1,6 @@
 {
   "name": "password-please",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "One-quick copy passwords ranked by security, to make it the least annoying password generation page on the Internet, please.",
   "main": "index.js",
   "repository": {
