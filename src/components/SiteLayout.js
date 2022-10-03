@@ -4,15 +4,15 @@ import SiteFooter from './SiteFooter'
 
 import { Row, Space, Layout } from 'antd'
 
-import { Gradient } from 'react-gradient'
-
-const property = 'background'
-const angle = '45deg'
-const duration = 5000
-const gradients = [
-  ['#bd19d6', '#000000'],
-  ['#4B0A55', '#000000']
-]
+// import { Gradient } from 'react-gradient'
+//
+// const property = 'background'
+// const angle = '45deg'
+// const duration = 5000
+// const gradients = [
+//   ['#bd19d6', '#000000'],
+//   ['#4B0A55', '#000000']
+// ]
 
 const returnItems = () => {
   const items = []
@@ -40,29 +40,29 @@ const SiteLayout = () => {
   return (
 
     <Layout className='layout'>
-      <Gradient
-        gradients={gradients}
-        property={property}
-        duration={duration}
-        angle={angle}
-      >
 
-        <Row align='center'>
+      <Row align='center'>
 
-          <Space direction='vertical' style={{ paddingBottom: 16 }}>
+        <Space direction='vertical' style={{ paddingBottom: 16 }}>
 
-            <SiteContent items={items} refreshDate={refreshDate} setRefreshDate={setRefreshDate} />
+          <SiteContent items={items} refreshDate={refreshDate} setRefreshDate={setRefreshDate} />
 
-            <SiteFooter />
+          <SiteFooter />
 
-          </Space>
+        </Space>
 
-        </Row>
-
-      </Gradient>
+      </Row>
     </Layout>
 
   )
 }
 
 export default SiteLayout
+
+// <Gradient
+//   gradients={gradients}
+//   property={property}
+//   duration={duration}
+//   angle={angle}
+// >
+// </Gradient>
