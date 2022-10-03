@@ -1,23 +1,16 @@
 import React from 'react'
 import { dateFormat } from '../lib'
 import { ReloadOutlined } from '@ant-design/icons'
-import { Space, Button, Typography } from 'antd'
-
-const { Text } = Typography
+import { Button } from 'antd'
 
 const Refresh = ({ refreshDate, setRefreshDate }) => {
   return (
-    <Space size='small'>
-      <Button
-        icon={<ReloadOutlined />}
-        onClick={() => setRefreshDate((new Date()))}
-      >
-        Refresh
-      </Button>
-      <Text>
-        {dateFormat(refreshDate)}
-      </Text>
-    </Space>
+    <Button
+      icon={<ReloadOutlined />}
+      onClick={() => setRefreshDate((new Date()))}
+    >
+      refreshed {dateFormat(refreshDate)}
+    </Button>
   )
 }
 
