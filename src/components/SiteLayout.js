@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import Background from './Background'
 import SiteContent from './SiteContent'
 import SiteFooter from './SiteFooter'
 
-import { Row, Space, Layout } from 'antd'
+import { Space, Layout } from 'antd'
 
 // import { Gradient } from 'react-gradient'
 //
@@ -33,7 +34,12 @@ const returnItems = () => {
 }
 
 const SiteLayout = () => {
-  const [refreshDate, setRefreshDate] = useState((new Date()))
+  const [refreshDate, setRefreshDate] = useState()
+  const [clicked, setClicked] = useState()
+
+  useEffect(() => {
+    if (!clicked && refreshDate) return setClicked(true)
+  }, [clicked, refreshDate, setClicked])
 
   const items = returnItems()
 
@@ -41,7 +47,7 @@ const SiteLayout = () => {
 
     <Layout className='layout'>
 
-      <Row align='center'>
+      <Background clicked={clicked}>
 
         <Space direction='vertical' style={{ paddingBottom: 16 }}>
 
@@ -51,7 +57,7 @@ const SiteLayout = () => {
 
         </Space>
 
-      </Row>
+      </Background>
     </Layout>
 
   )

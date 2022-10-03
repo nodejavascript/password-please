@@ -9,7 +9,7 @@ const Refresh = ({ refreshDate, setRefreshDate }) => {
       icon={<ReloadOutlined />}
       onClick={() => setRefreshDate((new Date()))}
     >
-      refreshed {dateFormat(refreshDate)}
+      {refreshDate && `it is ${dateFormat(refreshDate)}`}
     </Button>
   )
 }
