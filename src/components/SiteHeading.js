@@ -18,7 +18,7 @@ const SiteHeading = () => {
       title={<SiteTitle />}
     >
       <Text italic>
-        One-quick copy passwords ranked by security, to make it the least annoying password generation page on the Internet, please.
+        One-quick copy passwords ranked by security to make it the least annoying password generation page on the Internet, please. 🇺🇦
       </Text>
     </Card>
   )

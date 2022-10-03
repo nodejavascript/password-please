@@ -4,6 +4,16 @@ import SiteFooter from './SiteFooter'
 
 import { Row, Space, Layout } from 'antd'
 
+import { Gradient } from 'react-gradient'
+
+const property = 'background'
+const angle = '45deg'
+const duration = 5000
+const gradients = [
+  ['#bd19d6', '#000000'],
+  ['#4B0A55', '#000000']
+]
+
 const returnItems = () => {
   const items = []
 
@@ -28,18 +38,30 @@ const SiteLayout = () => {
   const items = returnItems()
 
   return (
+
     <Layout className='layout'>
-      <Row align='center'>
-        <Space direction='vertical' style={{ paddingBottom: 16 }}>
+      <Gradient
+        gradients={gradients}
+        property={property}
+        duration={duration}
+        angle={angle}
+      >
 
-          <SiteContent items={items} refreshDate={refreshDate} setRefreshDate={setRefreshDate} />
+        <Row align='center'>
 
-          <SiteFooter />
+          <Space direction='vertical' style={{ paddingBottom: 16 }}>
 
-        </Space>
+            <SiteContent items={items} refreshDate={refreshDate} setRefreshDate={setRefreshDate} />
 
-      </Row>
+            <SiteFooter />
+
+          </Space>
+
+        </Row>
+
+      </Gradient>
     </Layout>
+
   )
 }
 
