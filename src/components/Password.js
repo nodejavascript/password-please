@@ -12,6 +12,7 @@ const Password = ({ size, symbols }) => {
     <Space align='baseline'>
       <Text
         code
+        style={{ fontSize: 10 }}
       >
         {password}
       </Text>
