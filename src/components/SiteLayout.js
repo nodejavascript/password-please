@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Background from './Background'
-import SiteContent from './SiteContent'
+
+import SiteHeader from './SiteHeader'
+import SegmentedUI from './SegmentedUI'
 import SiteFooter from './SiteFooter'
 
 import { Space, Layout } from 'antd'
@@ -15,33 +17,8 @@ import { Space, Layout } from 'antd'
 //   ['#4B0A55', '#000000']
 // ]
 
-const returnItems = () => {
-  const items = []
-
-  const sizes = [48, 32, 24, 16, 8]
-
-  sizes.forEach(size => {
-    items.push({ size })
-    items.push({ size, symbols: 'true' })
-  })
-
-  items.forEach(item => {
-    const { size, symbols } = item
-    item.key = `${size}_${symbols ? 'symbols' : 'alphanumeric'}`
-  })
-
-  return items
-}
-
 const SiteLayout = () => {
-  const [refreshDate, setRefreshDate] = useState()
-  // const [clicked, setClicked] = useState()
-  //
-  // useEffect(() => {
-  //   if (!clicked && refreshDate) return setClicked(true)
-  // }, [clicked, refreshDate, setClicked])
-
-  const items = returnItems()
+  // const [refreshDate, setRefreshDate] = useState()
 
   return (
 
@@ -49,9 +26,11 @@ const SiteLayout = () => {
 
       <Background>
 
-        <Space direction='vertical' style={{ paddingBottom: 16 }}>
+        <Space direction='vertical' size='large'>
 
-          <SiteContent items={items} refreshDate={refreshDate} setRefreshDate={setRefreshDate} />
+          <SiteHeader />
+
+          <SegmentedUI />
 
           <SiteFooter />
 

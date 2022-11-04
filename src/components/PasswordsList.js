@@ -1,9 +1,12 @@
 import React from 'react'
+import { returnItems } from '../lib'
+
 import Password from './Password'
 
 import { Space } from 'antd'
 
-const PasswordsList = ({ items }) => {
+const PasswordsList = () => {
+  const items = returnItems()
   return (
 
     <Space direction='vertical'>

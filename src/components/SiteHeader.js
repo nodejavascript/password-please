@@ -12,16 +12,16 @@ const SiteTitle = () => {
   )
 }
 
-const SiteHeading = () => {
+const SiteHeader = () => {
   return (
     <Card
       title={<SiteTitle />}
     >
       <Text italic>
-        One-quick copy passwords ranked by security to make it the least annoying password generation page on the Internet, please. 🇺🇦
+        Last annoying password generator on the Internet
       </Text>
     </Card>
   )
 }
 
-export default SiteHeading
+export default SiteHeader
