@@ -35,11 +35,11 @@ const returnItems = () => {
 
 const SiteLayout = () => {
   const [refreshDate, setRefreshDate] = useState()
-  const [clicked, setClicked] = useState()
-
-  useEffect(() => {
-    if (!clicked && refreshDate) return setClicked(true)
-  }, [clicked, refreshDate, setClicked])
+  // const [clicked, setClicked] = useState()
+  //
+  // useEffect(() => {
+  //   if (!clicked && refreshDate) return setClicked(true)
+  // }, [clicked, refreshDate, setClicked])
 
   const items = returnItems()
 
@@ -47,7 +47,7 @@ const SiteLayout = () => {
 
     <Layout className='layout'>
 
-      <Background clicked={clicked}>
+      <Background>
 
         <Space direction='vertical' style={{ paddingBottom: 16 }}>
 
