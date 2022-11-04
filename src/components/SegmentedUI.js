@@ -79,7 +79,7 @@ const SegmentedUI = () => {
 
   useEffect(() => {
     if (!password) setPassword(returnPassword(input))
-  }, [password, setPassword])
+  }, [password, input, setPassword])
 
   return (
     <Card
