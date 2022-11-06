@@ -1,7 +1,22 @@
 {
   "short_name": "password-please",
-  "name": "password-please-not-short",
+  "name": "password-please : The least annoying password generator on the Internet",
   "icons": [
+    {
+      "src": "https://res.cloudinary.com/nodejavascript-com/image/upload/v1664655192/password-please/cursor_gxo8ya.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://res.cloudinary.com/nodejavascript-com/image/upload/v1664655192/password-please/cursor_gxo8ya.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://res.cloudinary.com/nodejavascript-com/image/upload/v1664655192/password-please/cursor_gxo8ya.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
   ],
   "start_url": ".",
   "display": "standalone",

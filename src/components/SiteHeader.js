@@ -18,7 +18,7 @@ const SiteHeader = () => {
       title={<SiteTitle />}
     >
       <Text italic>
-        Last annoying password generator on the Internet
+        The least annoying password generator on the Internet
       </Text>
     </Card>
   )

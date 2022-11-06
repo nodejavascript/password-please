@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Typography, Card, Row, Col } from 'antd'
+import { Typography, Card, Row, Col, Space } from 'antd'
 const { Text, Link } = Typography
 
 const notes = [
@@ -30,15 +30,19 @@ const SiteFooter = () => {
             const { title, href, linkText } = note
 
             return (
-              <Col key={title} flex='auto'>
-                <Text style={{ fontSize: 10, paddingRight: 3 }}>{title}</Text>
+              <Col key={title} flex='1'>
+                <Space direction='vertical'>
 
-                {
-                  href &&
-                    <Link href={href}>
-                      {linkText}
-                    </Link>
-                }
+                  <Text style={{ fontSize: 10, paddingRight: 3 }}>{title}</Text>
+
+                  {
+                    href &&
+                      <Link href={href}>
+                        {linkText}
+                      </Link>
+                  }
+
+                </Space>
               </Col>
             )
           })
