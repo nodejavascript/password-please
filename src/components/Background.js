@@ -8,8 +8,6 @@ const style = {
   backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg)',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
-
-
   minHeight: '100%'
 }
 
