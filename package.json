@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com-nodejavascript:nodejavascript/password-please.git"
+    "url": "git@github.com:nodejavascript/password-please.git"
   },
   "author": "",
   "license": "SEE LICENSE",
