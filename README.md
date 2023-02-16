@@ -1,8 +1,28 @@
 # password-please
-One-quick copy passwords ranked by security, to make it the least annoying password generation page on the Internet, please.
+The least annoying password generator on the Internet.
 
-# Home
-https://password-please.nodejavascript.com/
+## Free and open-source software
+[![go to password-please](https://res.cloudinary.com/nodejavascript-com/image/upload/v1676558556/password-please/Selection_019_u9iybd.png)](https://password-please.nodejavascript.com)
+https://password-please.nodejavascript.com
 
-# Staging
-https://stg-password-please.nodejavascript.com
+## Why?
+- I frequently require ENV secrets and when I do, I need many !!!
+- I needed continuous one-click, random password generator
+- Default 32 characters
+
+## The problem
+- But there are several secret generators online ?
+- LastPass, lol!
+- ads galore...
+- cumbersome
+- "they" try to convert you into a lead after creating a single password
+
+## The solution
+  - click to copy to clipboard
+  - generates new password
+  - repeat
+
+## Least annoying because:
+  - No marketing
+  - No advertising
+  - No tracking
