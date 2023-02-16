@@ -1,10 +1,6 @@
 # password-please
 The least annoying password generator on the Internet.
 
-## Free and open-source software
-[![go to password-please](https://res.cloudinary.com/nodejavascript-com/image/upload/v1676558556/password-please/Selection_019_u9iybd.png)](https://password-please.nodejavascript.com)
-https://password-please.nodejavascript.com
-
 ## Why?
 - I frequently require ENV secrets and when I do, I need many !!!
 - I needed continuous one-click, random password generator
@@ -26,6 +22,10 @@ https://password-please.nodejavascript.com
   - No marketing
   - No advertising
   - No tracking
+
+## Free and open-source software
+  [![go to password-please](https://res.cloudinary.com/nodejavascript-com/image/upload/v1676558556/password-please/Selection_019_u9iybd.png)](https://password-please.nodejavascript.com)
+  https://password-please.nodejavascript.com
 
 ## Attribution
 [Click here icons created by SeyfDesigner - Flaticon](https://www.flaticon.com/free-icons/click-here)
