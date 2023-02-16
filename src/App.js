@@ -3,11 +3,9 @@ import './App.css'
 
 import SiteLayout from './components/SiteLayout'
 
-const rootStyle = { height: '100vh' }
-
 const App = () => {
   return (
-    <div style={rootStyle}>
+    <div style={{ height: '100vh' }}>
       <SiteLayout />
     </div>
   )
