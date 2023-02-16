@@ -26,3 +26,6 @@ https://password-please.nodejavascript.com
   - No marketing
   - No advertising
   - No tracking
+
+## Attribution
+[Click here icons created by SeyfDesigner - Flaticon](https://www.flaticon.com/free-icons/click-here)
