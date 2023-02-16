@@ -1,6 +1,2 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-User-agent: *
-Disallow: /topsy/
-Disallow: /crets/
-Disallow: /hidden/file.html

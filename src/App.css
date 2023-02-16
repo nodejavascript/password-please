@@ -1,12 +1,1 @@
-@import '~antd/dist/antd.css';
-@import '~antd/dist/antd.variable.min.css';
-
-html {
-}
-body {
-  margin: 0px;
-  padding: 0px;
-  width:100%;
-  min-height: 100%;
-  background-color: 'black'
-}
+@import 'antd/dist/reset.css'
